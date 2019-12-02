@@ -1,18 +1,20 @@
 {
   "name": "troiiika.com",
   "version": "1.0.0",
-  "description": "Hello 11ty",
+  "description": "Three unicorns.",
   "main": "index.js",
   "scripts": {
+    "dev": "yarn serve",
     "build": "eleventy",
     "serve": "eleventy --serve"
   },
   "keywords": [],
-  "author": "hiloki <service@inkdesign.jp>",
+  "author": "hiloki <contact@troiiika.com>",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
     "eleventy-plugin-local-images": "^0.3.0",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "scaffdog": "^0.1.2"
   }
 }
