@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "yarn serve",
     "build": "eleventy",
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "new": "yarn scaffdog generate"
   },
   "keywords": [],
   "author": "hiloki <contact@troiiika.com>",
