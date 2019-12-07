@@ -17,7 +17,7 @@ date:
 tags: ["log"]
 ---
 
-<time datetime="\{\{ post.date | dateIso \}\}">\{\{ post.date | dateReadable \}\}</time>
+<time datetime="\{\{ date | dateIso \}\}">\{\{ date | dateReadable \}\}</time>
 
 # \{\{ title \}\}
 ```

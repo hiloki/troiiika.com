@@ -5,7 +5,7 @@ date: 2019-12-03
 tags: ["log"]
 ---
 
-<time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+<time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
 
 # {{ title }}
 
