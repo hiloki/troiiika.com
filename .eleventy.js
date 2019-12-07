@@ -13,14 +13,10 @@ module.exports = function(eleventyConfig) {
     return moment(date).format("LL"); // E.g. May 31, 2019
   });
 
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
+  // Copy `img/` to `_site/img`
+  eleventyConfig.addPassthroughCopy("assets/img");
 
-  eleventyConfig.addPlugin(localImages, {
-    distPath: "_site",
-    assetPath: "/assets/img",
-    selector: "img",
-    verbose: false
-  });
+  // Copy `css/fonts/` to `_site/css/fonts`
+  // If you use a subdirectory, it’ll copy using the same directory structure.
+  eleventyConfig.addPassthroughCopy("assets/css");
 };

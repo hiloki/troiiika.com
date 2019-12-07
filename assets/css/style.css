@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  background-color: #ebe5dc;
+  color: #1d1c1d;
+}
+
+a {
+  color: inherit;
+}
+
+.title {
+  font-family: "Caveat", cursive;
+}
