@@ -5,10 +5,6 @@ date: 2019-12-02
 tags: ["log"]
 ---
 
-<time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
-
-# {{ title }}
-
 今のところの仮の構想だが、ちょっとしたログのような短文の log カテゴリと、もっと長文で独立した article カテゴリで書きわけようと考えている。
 
 それぞれでのメタ情報やフォーマットに違いが出てくるので、Markdown ファイル生成を Scaffold できるようにしたかった。

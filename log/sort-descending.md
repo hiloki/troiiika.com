@@ -5,10 +5,6 @@ date: 2019-12-04
 tags: ["log"]
 ---
 
-<time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
-
-# {{ title }}
-
 新しい記事を先に来るようにした。Collection のイテレーションのところを`reverse` しただけ。
 コードは [Sort Descending](https://www.11ty.io/docs/collections/#sort-descending)参照。
 

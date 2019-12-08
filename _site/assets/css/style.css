@@ -1,13 +1,89 @@
-body {
-  font-family: sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 18px;
   background-color: #ebe5dc;
   color: #1d1c1d;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+ul,
+dl,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 a {
   color: inherit;
 }
 
-.title {
-  font-family: "Caveat", cursive;
+/* Header */
+.p-header {
+  text-align: center;
+}
+
+/* Title */
+.p-title {
+  font-weight: normal;
+  font-family: "Lexend Exa";
+}
+
+/* Content area */
+.p-content {
+}
+
+/* Log list */
+.p-logList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.p-logList__item {
+  flex: 0 0 100%;
+  padding: 18px;
+}
+
+@media (min-width: 566px) {
+  .p-logList__item {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .p-logList__item {
+    flex: 0 0 33%;
+  }
+}
+
+/* Article */
+.p-article {
+  padding: 18px;
+}
+
+.p-article__header {
+}
+.p-article__pubdate {
+}
+.p-article__title {
+  font-size: 1.5rem;
 }

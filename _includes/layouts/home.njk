@@ -1,23 +1,12 @@
 ---
+layout: layouts/base.njk
 title: troiiika
 ---
-<!doctype html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <h1 class="title">troiiika</h1>
-
-    <ul>
-    {%- for post in collections.log | reverse -%}
-      <li><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> <a href="{{ post.url }}">{{ post.data.title }}</a></li>
-    {%- endfor -%}
-    </ul>
-
-  </body>
-</html>
+<ul class="p-logList">
+{%- for post in collections.log | reverse -%}
+  <li class="p-logList__item">
+    <p><a href="{{ post.url }}"><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time></a></p>
+    {{ post.templateContent | safe }}
+  </li>
+{%- endfor -%}
+</ul>

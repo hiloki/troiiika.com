@@ -7,10 +7,15 @@ title: troiiika
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Caveat:400,700|Solway:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Rubik:400,700|Lexend+Exa|Caveat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
   </head>
   <body>
-    {{ content | safe }}
+    <header class="p-header">
+      <h1 class="p-title"><a href="/">TROiiiKA</a></h1>
+    </header>
+    <main class="p-content">
+      {{ content | safe }}
+    </main>
   </body>
 </html>
