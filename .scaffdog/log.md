@@ -16,8 +16,4 @@ title:
 date:
 tags: ["log"]
 ---
-
-<time datetime="\{\{ date | dateIso \}\}">\{\{ date | dateReadable \}\}</time>
-
-# \{\{ title \}\}
 ```
