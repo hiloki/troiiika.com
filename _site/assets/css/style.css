@@ -105,3 +105,9 @@ a {
   width: 128px;
   height: 128px;
 }
+
+/* Footer */
+.p-footer {
+  padding: 18px;
+  text-align: center;
+}
