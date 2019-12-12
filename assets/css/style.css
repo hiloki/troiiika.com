@@ -30,6 +30,17 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   color: inherit;
 }
@@ -104,6 +115,26 @@ a {
   border-radius: 50%;
   width: 128px;
   height: 128px;
+}
+
+/* Publication List */
+.p-publicationList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-publicationList > * {
+  text-align: center;
+}
+
+.p-publicationList > * + * {
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.p-publicationList__cover {
+  width: auto;
+  height: 320px;
 }
 
 /* Footer */
