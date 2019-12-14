@@ -1,3 +1,25 @@
+/* $modularscale: (
+  base: 18px,
+  ratio: 1.25
+); */
+
+:root {
+  /* Major Third = 1.25 */
+  --root-font-size: 18px;
+  --font-size-30: 0.64rem;
+  --font-size-40: 0.8rem;
+  --font-size-50: 1rem;
+  --font-size-60: 1.25rem;
+  --font-size-70: 1.563rem;
+  --font-size-80: 1.953rem;
+  --font-size-90: 2.441rem;
+  --font-size-100: 3.052rem;
+  --base-font-size: var(--root-font-size);
+
+  --base-line-height-500: 1.6;
+  --base-line-height: var(--base-line-height-500);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,7 +30,8 @@
 }
 
 html {
-  font-size: 18px;
+  line-height: var(--base-line-height);
+  font-size: var(--base-font-size);
   background-color: #ebe5dc;
   color: #1d1c1d;
 }
@@ -173,4 +196,30 @@ a {
 
 .p-swatch.--invert {
   color: #ebe5dc;
+}
+
+/* Typography */
+.p-typography.-size-30 {
+  font-size: var(--font-size-30);
+}
+.p-typography.-size-40 {
+  font-size: var(--font-size-40);
+}
+.p-typography.-size-50 {
+  font-size: var(--font-size-50);
+}
+.p-typography.-size-60 {
+  font-size: var(--font-size-60);
+}
+.p-typography.-size-70 {
+  font-size: var(--font-size-70);
+}
+.p-typography.-size-80 {
+  font-size: var(--font-size-80);
+}
+.p-typography.-size-90 {
+  font-size: var(--font-size-90);
+}
+.p-typography.-size-100 {
+  font-size: var(--font-size-100);
 }
