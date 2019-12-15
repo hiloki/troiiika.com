@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Troiiika</title>
+  <subtitle>Three unicorns.</subtitle>
+  <link href="https://troiiika.com/log/feed.xml" rel="self"/>
+  <link href="https://troiiika.com/"/>
+  <updated>2019-12-14T09:00:00+09:00</updated>
+  <id>https://troiiika.com/</id>
+  <author>
+    <name>Hiroki Tani</name>
+    <email>contact@troiiika.com</email>
+  </author>
+  
+  <entry>
+    <title>troiiikaはじめます</title>
+    <link href="https://troiiika.com/log/the-first-day/"/>
+    <updated>2019-12-01T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/the-first-day/</id>
+    <content type="html">&lt;p&gt;数年休止してた&lt;a href=&quot;http://inkdesign.jp/&quot;&gt;inkdesign&lt;/a&gt;から移行して、新しく troiiika（トロイカ）としてアウトプットや活動をはじめることにする。&lt;/p&gt;
+&lt;p&gt;手始めにとりあえず&lt;a href=&quot;https://www.11ty.io/&quot;&gt;Eleventy&lt;/a&gt;に手を付けた。今のところ、まるで Eleventy がわからない。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>記事のScaffold</title>
+    <link href="https://troiiika.com/log/scaffold/"/>
+    <updated>2019-12-02T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/scaffold/</id>
+    <content type="html">&lt;p&gt;今のところの仮の構想だが、ちょっとしたログのような短文の log カテゴリと、もっと長文で独立した article カテゴリで書きわけようと考えている。&lt;/p&gt;
+&lt;p&gt;それぞれでのメタ情報やフォーマットに違いが出てくるので、Markdown ファイル生成を Scaffold できるようにしたかった。&lt;/p&gt;
+&lt;p&gt;ということで、同僚のつくった&lt;a href=&quot;https://blog.wadackel.me/2019/scaffdog/&quot;&gt;Scaffdog&lt;/a&gt;を拝借することにした。いったん必要最低限でこしらえた。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>トップページにカテゴリ記事一覧を出す</title>
+    <link href="https://troiiika.com/log/update-index/"/>
+    <updated>2019-12-03T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/update-index/</id>
+    <content type="html">&lt;p&gt;トップページを &lt;code&gt;collection.all&lt;/code&gt; を出力しているのを &lt;code&gt;log&lt;/code&gt; カテゴリの投稿だけ出すようにする。
+リンク一覧じゃなく、全文出すのも考えたがいったん。
+さすがにそろそろ最低限のスタイルほしい。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Collectionの並びを反転する</title>
+    <link href="https://troiiika.com/log/sort-descending/"/>
+    <updated>2019-12-04T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/sort-descending/</id>
+    <content type="html">&lt;p&gt;新しい記事を先に来るようにした。Collection のイテレーションのところを&lt;code&gt;reverse&lt;/code&gt; しただけ。
+コードは &lt;a href=&quot;https://www.11ty.io/docs/collections/#sort-descending&quot;&gt;Sort Descending&lt;/a&gt;参照。&lt;/p&gt;
+&lt;p&gt;あれよこれよと 24 時を迎えてしまうので、びっくりするくらい進捗が出ないなこれ。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>インラインでCSSを突っ込む</title>
+    <link href="https://troiiika.com/log/inline-css/"/>
+    <updated>2019-12-05T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/inline-css/</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.11ty.dev/docs/quicktips/inline-css/&quot;&gt;公式の Tips&lt;/a&gt;を参考に、単純な CSS を仮でいれてみた。
+試しただけなので後で書き換える。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>どういうデザインにするか悩む</title>
+    <link href="https://troiiika.com/log/inspiration/"/>
+    <updated>2019-12-06T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/inspiration/</id>
+    <content type="html">&lt;p&gt;ここ最近はデザインとしてブログそのものを見る機会が減ってしまったので、どういうデザインにするかが悩ましい。&lt;/p&gt;
+&lt;p&gt;基本的には文章中心になるだろうから、&lt;a href=&quot;https://hail2u.net/&quot;&gt;hail2u.net&lt;/a&gt;とか&lt;a href=&quot;https://standard.shiftbrain.com/blog&quot;&gt;シフトブラインのデザインユニット&lt;/a&gt;さんのブログとか、&lt;a href=&quot;https://trentwalton.com/&quot;&gt;Trent Walton&lt;/a&gt;のサイトとかを眺めている。&lt;/p&gt;
+&lt;p&gt;週末にはもっとぐっと進めたい。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>アセットファイルのパス</title>
+    <link href="https://troiiika.com/log/assets-path/"/>
+    <updated>2019-12-07T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/assets-path/</id>
+    <content type="html">&lt;p&gt;CSS や画像などのアセットファイルは、何も設定しないと dist ディレクトリにコピーされない。
+公式ドキュメントの&lt;a href=&quot;https://www.11ty.dev/docs/copy/&quot;&gt;MANUAL PASSTHROUGH FILE COPY (FASTER) &lt;/a&gt;の項を参考に、config ファイルを修正した。
+ただこれだけど、CSS ファイルを更新しても自動でビルドはされないので、それはひと工夫追加が必要。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>基本的なレイアウトを少しだけ変更</title>
+    <link href="https://troiiika.com/log/base-layout/"/>
+    <updated>2019-12-08T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/base-layout/</id>
+    <content type="html">&lt;p&gt;Eleventy を少し探るためにレイアウトやスタイルを少し変更した。&lt;/p&gt;
+&lt;p&gt;layout の構成もやや変更。とりあえず Eleventy の自由度の高さを実感してる。&lt;/p&gt;
+&lt;p&gt;いつになれば Troiiika という名前にふれるのだろうか。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>アーカイブ一覧ページ</title>
+    <link href="https://troiiika.com/log/archive-index/"/>
+    <updated>2019-12-09T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/archive-index/</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.troiiika.com/log/&quot;&gt;カテゴリのアーカイブ記事一覧&lt;/a&gt;を雑にこしらえた。
+今日はこれだけ。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>著者ページ</title>
+    <link href="https://troiiika.com/log/author/"/>
+    <updated>2019-12-10T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/author/</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.troiiika.com/author/&quot;&gt;著者ページ&lt;/a&gt;を仮で。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://inkdesign.jp/about/&quot;&gt;inkdesign のとき&lt;/a&gt;には講演情報なども載せてたので、そういうアーカイブもできれば載せて更新したい。&lt;/p&gt;
+&lt;p&gt;ちなみに GitHub にもそういう&lt;a href=&quot;https://github.com/hiloki/me&quot;&gt;リポジトリ&lt;/a&gt;がある。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>著者リンクをフッターに追加</title>
+    <link href="https://troiiika.com/log/author-link/"/>
+    <updated>2019-12-11T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/author-link/</id>
+    <content type="html">&lt;p&gt;著者リンクをフッターに追加した。
+若干お仕事周辺忙しくてここまで。&lt;/p&gt;
+&lt;p&gt;1mm でも継続。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>著書を追加</title>
+    <link href="https://troiiika.com/log/publications/"/>
+    <updated>2019-12-12T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/publications/</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://troiiika.com/author/&quot;&gt;著者ページ&lt;/a&gt;に、著書を追加。&lt;/p&gt;
+&lt;p&gt;共著を含めるともう少し冊数あるが、内容も古くなってしまってるものあるのでここには掲載しない。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Styleguide</title>
+    <link href="https://troiiika.com/log/styleguide/"/>
+    <updated>2019-12-13T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/styleguide/</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://troiiika.com/styleguide&quot;&gt;スタイルガイド&lt;/a&gt;のページだけつくった。&lt;/p&gt;
+&lt;p&gt;この週末こそは...&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Typography</title>
+    <link href="https://troiiika.com/log/typography/"/>
+    <updated>2019-12-14T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/typography/</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://troiiika.com/styleguide&quot;&gt;スタイルガイド&lt;/a&gt;に雑に Typography スタイル追加。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.modularscale.com/?1&amp;amp;em&amp;amp;1.25&quot;&gt;Modular Scale&lt;/a&gt;で 4.5 の Major Third の比率にしてみた。&lt;/p&gt;
+</content>
+  </entry>
+</feed>

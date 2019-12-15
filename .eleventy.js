@@ -1,6 +1,5 @@
 const moment = require("moment");
-const localImages = require("eleventy-plugin-local-images");
-const CleanCSS = require("clean-css");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 moment.locale("ja");
 
@@ -19,4 +18,6 @@ module.exports = function(eleventyConfig) {
   // Copy `css/fonts/` to `_site/css/fonts`
   // If you use a subdirectory, it’ll copy using the same directory structure.
   eleventyConfig.addPassthroughCopy("assets/css");
+
+  eleventyConfig.addPlugin(pluginRss);
 };
