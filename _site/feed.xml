@@ -4,7 +4,7 @@
   <subtitle>Three unicorns.</subtitle>
   <link href="https://troiiika.com/feed.xml" rel="self"/>
   <link href="https://troiiika.com/"/>
-  <updated>2019-12-14T09:00:00+09:00</updated>
+  <updated>2019-12-15T09:00:00+09:00</updated>
   <id>https://troiiika.com/</id>
   <author>
     <name>Hiroki Tani</name>
@@ -156,6 +156,17 @@
     <id>https://troiiika.com/log/typography/</id>
     <content type="html">&lt;p&gt;&lt;a href=&quot;https://troiiika.com/styleguide&quot;&gt;スタイルガイド&lt;/a&gt;に雑に Typography スタイル追加。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.modularscale.com/?1&amp;amp;em&amp;amp;1.25&quot;&gt;Modular Scale&lt;/a&gt;で 4.5 の Major Third の比率にしてみた。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Feedの配信はじめた</title>
+    <link href="https://troiiika.com/log/feed/"/>
+    <updated>2019-12-15T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/feed/</id>
+    <content type="html">&lt;p&gt;記事の体裁を整えようとしているが、そもそも Feed のツールなりサービスで読まれるかもしれないと思うと、とりあえず先に Feed 配信するほうがよさそうなので、&lt;a href=&quot;https://www.troiiika.com/feed.xml&quot;&gt;Feed&lt;/a&gt;をこしらえた。&lt;/p&gt;
+&lt;p&gt;記事はいくつかのカテゴリに分ける予定なのだが、カテゴリ別配信もするかどうかは悩ましい。&lt;/p&gt;
+&lt;p&gt;なお実装は&lt;a href=&quot;https://github.com/11ty/eleventy-plugin-rss&quot;&gt;公式プラグイン&lt;/a&gt;の力を借りた。&lt;/p&gt;
 </content>
   </entry>
 </feed>
