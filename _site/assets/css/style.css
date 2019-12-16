@@ -86,8 +86,8 @@ a {
 /* Log list */
 .p-logList {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   margin: 0;
   padding: 0;
 }
