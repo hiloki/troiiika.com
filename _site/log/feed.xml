@@ -4,7 +4,7 @@
   <subtitle>Three unicorns.</subtitle>
   <link href="https://troiiika.com/log/feed.xml" rel="self"/>
   <link href="https://troiiika.com/"/>
-  <updated>2019-12-16T09:00:00+09:00</updated>
+  <updated>2019-12-17T09:00:00+09:00</updated>
   <id>https://troiiika.com/</id>
   <author>
     <name>Hiroki Tani</name>
@@ -177,6 +177,17 @@
     <id>https://troiiika.com/log/thinking/</id>
     <content type="html">&lt;p&gt;コード以外のところ考え中で、カスタマイズの進捗なし。
 ところで、log のほうの URL は date を slug にしたほうがいいのではと考えはじめた。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Troikaなイメージ起こした</title>
+    <link href="https://troiiika.com/log/troika-image/"/>
+    <updated>2019-12-17T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/troika-image/</id>
+    <content type="html">&lt;p&gt;Troiiika は、ロシアのトロイカに由来にしている。&lt;/p&gt;
+&lt;p&gt;3 頭の馬、それをデザイン、エンジニアリング、ビジネスということで、さらにユニコーン化した。&lt;/p&gt;
+&lt;p&gt;まぁそれっぽいだろう。&lt;/p&gt;
 </content>
   </entry>
 </feed>
