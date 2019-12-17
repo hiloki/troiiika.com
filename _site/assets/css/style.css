@@ -18,6 +18,9 @@
 
   --base-line-height-500: 1.6;
   --base-line-height: var(--base-line-height-500);
+
+  --color-navy: #0b3251;
+  --color-milk: #f8f7f4;
 }
 
 * {
@@ -32,8 +35,8 @@
 html {
   line-height: var(--base-line-height);
   font-size: var(--base-font-size);
-  background-color: #ebe5dc;
-  color: #1d1c1d;
+  background-color: var(--color-milk);
+  color: var(--color-navy);
 }
 
 body {
@@ -70,7 +73,14 @@ a {
 
 /* Header */
 .p-header {
+  padding: 18px;
   text-align: center;
+}
+
+.p-header__image {
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
 
 /* Title */
