@@ -79,8 +79,8 @@ a {
 
 .p-header__image {
   max-width: 100%;
-  width: auto;
-  height: auto;
+  width: 576px;
+  height: 320px;
 }
 
 /* Title */
