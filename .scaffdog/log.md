@@ -12,8 +12,8 @@ ignore: []
 ```markdown
 ---
 layout: layouts/log.njk
-title:
-date:
+title: {{ input }}
+date: {{ input }}
 tags: ["log"]
 ---
 ```

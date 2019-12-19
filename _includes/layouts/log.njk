@@ -4,8 +4,7 @@ title: Troiiika
 ---
 <article class="p-article">
 <header class="p-article__header">
-  <time datetime="{{ date | dateIso }}" class="p-article__pubdate">{{ date | dateReadable }}</time>
-  <h1 class="p-article__title">{{ title }}</h1>
+  <h1 class="p-article__title"><time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time></h1>
 </header>
 {{ content | safe }}
 </article>
