@@ -4,7 +4,7 @@
   <subtitle>Three unicorns.</subtitle>
   <link href="https://troiiika.com/feed.xml" rel="self"/>
   <link href="https://troiiika.com/"/>
-  <updated>2019-12-19T09:00:00+09:00</updated>
+  <updated>2019-12-20T09:00:00+09:00</updated>
   <id>https://troiiika.com/</id>
   <author>
     <name>Hiroki Tani</name>
@@ -208,6 +208,16 @@
     <id>https://troiiika.com/log/2019-12-19/</id>
     <content type="html">&lt;p&gt;記事のslugは日付にした。&lt;/p&gt;
 &lt;p&gt;過去記事のURLはそのまま。後日Rewriteするかもしれない。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Fri Dec 20 2019 09:00:00 GMT+0900 (GMT+09:00)</title>
+    <link href="https://troiiika.com/log/2019-12-20/"/>
+    <updated>2019-12-20T09:00:00+09:00</updated>
+    <id>https://troiiika.com/log/2019-12-20/</id>
+    <content type="html">&lt;p&gt;logではなく、articleとして長文記事の下書きをしてる。&lt;/p&gt;
+&lt;p&gt;なぜTroiiikaなのかとか、来年の活動のこととか。&lt;/p&gt;
 </content>
   </entry>
 </feed>
