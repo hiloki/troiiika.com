@@ -6,20 +6,20 @@
 :root {
   /* Major Third = 1.25 */
   --root-font-size: 18px;
-  --font-size-30: 0.64rem;
-  --font-size-40: 0.8rem;
+  --font-size-20: 0.66667rem;
+  --font-size-30: 0.75rem;
+  --font-size-40: 0.85714rem;
   --font-size-50: 1rem;
-  --font-size-60: 1.25rem;
-  --font-size-70: 1.563rem;
-  --font-size-80: 1.953rem;
-  --font-size-90: 2.441rem;
-  --font-size-100: 3.052rem;
+  --font-size-60: 1.2rem;
+  --font-size-70: 1.5rem;
+  --font-size-80: 2rem;
+
   --base-font-size: var(--root-font-size);
 
   --base-line-height-500: 1.6;
   --base-line-height: var(--base-line-height-500);
 
-  --color-navy: #0b3251;
+  --color-ink: #010201;
   --color-milk: #f8f7f4;
 }
 
@@ -36,7 +36,7 @@ html {
   line-height: var(--base-line-height);
   font-size: var(--base-font-size);
   background-color: var(--color-milk);
-  color: var(--color-navy);
+  color: var(--color-ink);
 }
 
 body {
