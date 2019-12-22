@@ -16,8 +16,12 @@
 
   --base-font-size: var(--root-font-size);
 
-  --base-line-height-500: 1.6;
-  --base-line-height: var(--base-line-height-500);
+  --line-height-50: calc(20px / var(--root-font-size)); /* 20px / 18px */
+  --line-height-60: calc(24px / var(--root-font-size)); /* 24px / 18px */
+  --line-height-70: calc(28px / var(--root-font-size)); /* 28px / 18px */
+  --line-height-80: calc(32px / var(--root-font-size)); /* 32px / 18px */
+
+  --base-line-height: var(--line-height-70);
 
   --color-ink: #010201;
   --color-milk: #f8f7f4;
@@ -34,6 +38,8 @@
 
 html {
   line-height: var(--base-line-height);
+  line-height: 1.55;
+  line-height: calc(28px / var(--root-font-size));
   font-size: var(--base-font-size);
   background-color: var(--color-milk);
   color: var(--color-ink);
