@@ -13,6 +13,7 @@
   --font-size-60: 1.2rem;
   --font-size-70: 1.5rem;
   --font-size-80: 2rem;
+  --font-size-90: 3rem;
 
   --base-font-size: var(--root-font-size);
 
@@ -20,8 +21,12 @@
   --line-height-60: calc(24px / var(--root-font-size)); /* 24px / 18px */
   --line-height-70: calc(28px / var(--root-font-size)); /* 28px / 18px */
   --line-height-80: calc(32px / var(--root-font-size)); /* 32px / 18px */
+  --line-height-90: calc(36px / var(--root-font-size)); /* 36px / 18px */
 
   --base-line-height: var(--line-height-70);
+
+  --font-family-ja: "Noto Sans JP", sans-serif;
+  --font-family-en: "Six Caps", sans-serif;
 
   --color-ink: #010201;
   --color-milk: #f8f7f4;
@@ -43,12 +48,9 @@ html {
   line-height: 1.55;
   line-height: calc(28px / var(--root-font-size));
   font-size: var(--base-font-size);
+  font-family: var(--font-family-ja);
   background-color: var(--color-milk);
   color: var(--color-ink);
-}
-
-body {
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 ul,
@@ -81,7 +83,7 @@ a {
 
 /* Header */
 .p-header {
-  padding: 18px;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -94,7 +96,11 @@ a {
 /* Title */
 .p-title {
   font-weight: normal;
-  font-family: "Lexend Exa";
+  font-family: var(--font-family-en);
+  font-size: 108px;
+}
+.p-title a {
+  text-decoration: none;
 }
 
 /* Content area */
