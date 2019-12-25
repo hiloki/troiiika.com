@@ -2,11 +2,14 @@
 layout: layouts/base.njk
 title: Troiiika
 ---
-<ul class="p-logList">
-{%- for post in collections.log | reverse -%}
-  <li class="p-logList__item">
-    <p><a href="{{ post.url }}"><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time></a></p>
-    {{ post.templateContent | safe }}
-  </li>
+{%- for post in collections.articles | reverse -%}
+<article class="p-article">
+  <header class="p-article__header">
+    <p class="p-article__pubdate"><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time></p>
+    <h1 class="p-article__title">{{ post.data.title | safe }}</h1>
+  </header>
+  <div class="p-article__body">
+  {{ post.templateContent | safe }}
+  </div>
+</article>
 {%- endfor -%}
-</ul>

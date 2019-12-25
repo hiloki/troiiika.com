@@ -90,7 +90,7 @@ a {
 .p-header__image {
   max-width: 100%;
   width: 576px;
-  height: 320px;
+  height: auto;
 }
 
 /* Title */
@@ -136,15 +136,22 @@ a {
 
 /* Article */
 .p-article {
+  margin-left: auto;
+  margin-right: auto;
   padding: 18px;
+  max-width: 860px;
 }
 
 .p-article__header {
 }
 .p-article__pubdate {
+  font-size: var(--font-size-30);
 }
 .p-article__title {
-  font-size: 1rem;
+  font-size: var(--font-size-80);
+}
+.p-article__body > h2 {
+  font-size: var(--font-size-86);
 }
 
 /* Author */
