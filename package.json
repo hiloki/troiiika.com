@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "yarn serve",
     "build": "eleventy",
-    "serve": "eleventy --serve",
+    "serve": "eleventy --serve --port=5800",
     "new": "yarn scaffdog generate",
     "commit:log": "git add . & git commit -m log:",
     "deploy": "git push origin master"

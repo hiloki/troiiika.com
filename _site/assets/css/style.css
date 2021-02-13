@@ -1,36 +1,21 @@
-/*
- * まだここ散らかってるんで、見ないでください！
- */
-
 :root {
-  /* Major Third = 1.25 */
-  --root-font-size: 18px;
-  --font-size-20: 0.66667rem;
-  --font-size-30: 0.75rem;
-  --font-size-40: 0.85714rem;
-  --font-size-50: 1rem;
-  --font-size-60: 1.2rem;
-  --font-size-70: 1.5rem;
-  --font-size-80: 2rem;
-  --font-size-90: 3rem;
+  --base-color-milk: #faf8f3;
+  --base-color-cinnamon: #bb9377;
+  --base-color-light: #aa7855;
+  --base-color-city: #886044;
+  --base-color-full-city: #553c2b;
+  --base-color-dark: #33241a;
+  --base-color-french: #221811;
+  --base-color-italian: #110c09;
+  --base-color-matcha: #83b56c;
+  --base-color-au-lait: rgba(187, 147, 119, 0.5);
+  --base-font-ja: sans-serif;
+  --base-font-en: "Ubuntu", sans-serif;
 
-  --base-font-size: var(--root-font-size);
-
-  --line-height-50: calc(20px / var(--root-font-size)); /* 20px / 18px */
-  --line-height-60: calc(24px / var(--root-font-size)); /* 24px / 18px */
-  --line-height-70: calc(28px / var(--root-font-size)); /* 28px / 18px */
-  --line-height-80: calc(32px / var(--root-font-size)); /* 32px / 18px */
-  --line-height-90: calc(36px / var(--root-font-size)); /* 36px / 18px */
-
-  --base-line-height: var(--line-height-70);
-
-  --font-family-ja: "Noto Sans JP", sans-serif;
-  --font-family-en: "Six Caps", sans-serif;
-
-  --color-ink: #010201;
-  --color-milk: #f8f7f4;
-
-  --body-text: ;
+  --font-en: var(--base-font-en);
+  --background-color: var(--base-color-milk);
+  --text-color: var(--base-color-french);
+  --text-link-color: var(--base-color-city);
 }
 
 * {
@@ -43,214 +28,115 @@
 }
 
 html {
-  line-height: var(--base-line-height);
-  line-height: 1.55;
-  line-height: calc(28px / var(--root-font-size));
-  font-size: var(--base-font-size);
-  font-family: var(--font-family-ja);
-  background-color: var(--color-milk);
-  color: var(--color-ink);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-ul,
-dl,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-
-ul {
-  margin-left: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-li {
+body {
   margin: 0;
-  padding: 0;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+img,
+svg {
+  vertical-align: middle;
 }
 
 a {
   color: inherit;
 }
-
-/* Header */
-.p-header {
-  padding: 1rem;
-  text-align: center;
-}
-
-.p-header__image {
-  max-width: 100%;
-  width: 576px;
-  height: auto;
-}
-
-/* Title */
-.p-title {
-  font-weight: normal;
-  font-family: var(--font-family-en);
-  font-size: 108px;
-}
-
-.p-title a {
+a:hover {
   text-decoration: none;
 }
 
-/* Content area */
-.p-content {
+.c-icon {
+  fill: currentColor;
 }
 
-/* Log list */
-.p-logList {
-  list-style: none;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  margin: 0;
-  padding: 0;
-}
-
-.p-logList__item {
-  flex: 0 0 100%;
-  padding: 18px;
-}
-
-@media (min-width: 566px) {
-  .p-logList__item {
-    flex: 0 0 50%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .p-logList__item {
-    flex: 0 0 33%;
-  }
-}
-
-/* Article */
-.p-article {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 18px;
-  max-width: 860px;
-}
-
-.p-article__header {
-}
-.p-article__pubdate {
-  font-size: var(--font-size-30);
-}
-.p-article__title {
-  font-size: var(--font-size-80);
-}
-.p-article__body > h2 {
-  font-size: var(--font-size-86);
-}
-
-/* Author */
-.p-author {
-  padding: 18px;
-}
-
-.p-author__header {
-  text-align: center;
-}
-
-.p-author__title {
-}
-
-.p-author__avatar {
-  border-radius: 50%;
-  width: 128px;
-  height: 128px;
-}
-
-/* Publication List */
-.p-publicationList {
+.p-cover {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.p-publicationList > * {
-  text-align: center;
-}
-
-.p-publicationList > * + * {
-  margin-left: 9px;
-  margin-right: 9px;
-}
-
-.p-publicationList__cover {
-  width: auto;
-  height: 320px;
-}
-
-/* Footer */
-.p-footer {
-  padding: 18px;
-  text-align: center;
-}
-
-/* Styleguide */
-.p-styleguide {
-}
-
-.styleguide__subhead {
-  font-size: 18px;
-}
-
-.p-styleguide__swatch {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.p-styleguide__swatch > * {
-  margin-right: 9px;
-}
-
-/* Swatch */
-.p-swatch {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  border: 6px solid #fff;
-  width: 120px;
-  height: 120px;
-  text-transform: uppercase;
+  justify-content: center;
+  min-height: 92vh;
 }
 
-.p-swatch.--invert {
-  color: #ebe5dc;
+.p-title {
+  width: 92px;
+  text-align: center;
+}
+.p-title-logo {
+  width: 92px;
+  height: 92px;
+}
+.p-title-name {
+  margin-top: 8px;
+  display: block;
+  font-family: var(--font-en);
+  font-weight: bold;
+  font-size: 24px;
 }
 
-/* Typography */
-.p-typography.-size-30 {
-  font-size: var(--font-size-30);
+.p-lead {
+  margin-top: 24px;
+  text-align: center;
+  line-height: 1.77;
+  font-family: var(--font-en);
+  font-size: 16px;
 }
-.p-typography.-size-40 {
-  font-size: var(--font-size-40);
+.p-lead-link {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
 }
-.p-typography.-size-50 {
-  font-size: var(--font-size-50);
+
+.p-lead-link .c-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  transition: opacity 300ms linear, transform 300ms ease-out;
 }
-.p-typography.-size-60 {
-  font-size: var(--font-size-60);
+
+.p-lead-link.-upper:hover .c-icon {
+  opacity: 1;
+  transform: translateY(-1em);
 }
-.p-typography.-size-70 {
-  font-size: var(--font-size-70);
+.p-lead-link.-lower:hover .c-icon {
+  opacity: 1;
+  transform: translateY(1.5em);
 }
-.p-typography.-size-80 {
-  font-size: var(--font-size-80);
+
+.p-me {
+  position: fixed;
+  right: -64px;
+  bottom: -32px;
 }
-.p-typography.-size-90 {
-  font-size: var(--font-size-90);
+.p-me-image {
+  width: 256px;
+  height: auto;
+  clip-path: url(#me-mask);
+  filter: grayscale(100%);
 }
-.p-typography.-size-100 {
-  font-size: var(--font-size-100);
+
+@media (min-width: 480px) {
+  .p-me {
+    position: fixed;
+    right: -96px;
+    bottom: -48px;
+  }
+  .p-me-image {
+    width: 384px;
+    height: auto;
+    clip-path: url(#me-mask);
+  }
 }
