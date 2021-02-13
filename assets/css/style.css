@@ -93,27 +93,28 @@ a:hover {
   display: inline-block;
   font-weight: bold;
   text-decoration: none;
+  transition: padding-left 300ms ease-out;
 }
 
 .p-lead-link .c-icon {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
   display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
   width: 24px;
   height: 24px;
   opacity: 0;
+  visibility: hidden;
   transition: opacity 300ms linear, transform 300ms ease-out;
 }
-
-.p-lead-link.-upper:hover .c-icon {
-  opacity: 1;
-  transform: translateY(-1em);
+.p-lead-link:hover {
+  padding-left: 24px;
 }
-.p-lead-link.-lower:hover .c-icon {
+.p-lead-link:hover .c-icon {
+  visibility: visible;
   opacity: 1;
-  transform: translateY(1.5em);
 }
 
 .p-me {
