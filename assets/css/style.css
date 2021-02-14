@@ -14,8 +14,11 @@
 
   --font-en: var(--base-font-en);
   --background-color: var(--base-color-milk);
+  --line-color-highlight: var(--base-color-matcha);
   --text-color: var(--base-color-french);
   --text-link-color: var(--base-color-city);
+  --text-size-body: 16px;
+  --text-size-heading: 24px;
 }
 
 * {
@@ -66,27 +69,27 @@ a:hover {
 }
 
 .p-title {
-  width: 92px;
   text-align: center;
+  font-size: var(--text-size-heading);
 }
 .p-title-logo {
-  width: 92px;
-  height: 92px;
+  width: 4em;
+  height: 4em;
 }
 .p-title-name {
-  margin-top: 8px;
+  margin-top: 0.25em;
   display: block;
   font-family: var(--font-en);
   font-weight: bold;
-  font-size: 24px;
+  font-size: var(--text-size-heading);
 }
 
 .p-lead {
-  margin-top: 24px;
+  margin-top: 1.5em;
   text-align: center;
   line-height: 1.77;
   font-family: var(--font-en);
-  font-size: 16px;
+  font-size: var(--text-size-body);
 }
 .p-lead-link {
   position: relative;
@@ -96,6 +99,15 @@ a:hover {
   transition: padding-left 300ms ease-out;
 }
 
+.p-lead-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid var(--line-color-highlight);
+}
+
 .p-lead-link .c-icon {
   display: inline-block;
   position: absolute;
@@ -103,14 +115,14 @@ a:hover {
   bottom: 0;
   margin: auto;
   left: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.5em;
+  height: 1.5em;
   opacity: 0;
   visibility: hidden;
   transition: opacity 300ms linear, transform 300ms ease-out;
 }
 .p-lead-link:hover {
-  padding-left: 24px;
+  padding-left: 1.5em;
 }
 .p-lead-link:hover .c-icon {
   visibility: visible;
@@ -130,6 +142,10 @@ a:hover {
 }
 
 @media (min-width: 480px) {
+  :root {
+    --text-size-body: 24px;
+    --text-size-heading: 36px;
+  }
   .p-me {
     position: fixed;
     right: -96px;
